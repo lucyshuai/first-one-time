@@ -1,0 +1,6 @@
+.custom-file-control:lang(zh-Hans)::before{
+    content:"选择";
+}
+.custom-file-control:lang(zh-Hans)::after{
+    content:"选择文件...";
+}
