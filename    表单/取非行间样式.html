@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+    #div1
+    {  
+         width: 200px; 
+        height: 200px;
+        background: red;
+
+    }
+    </style>
 <script>
+    function getStyle(obj,name)
+    {
+        if(obj.currentStyle)
+        {
+            return obj.currentStyle[name];
+        }
+        else
+        {
+            return getComputedStyle(obj,false)[name];
+        }
+    }
 window.onload=function ()
 {
     var oDiv=document.getElementById('div1');
-    alert(oDiv.style.width);
-}
+    alert(getStyle(oDiv,'width'));
+
+   // alert(oDiv.style.width);
+//    //currentStyle  不兼容
+//     alert(oDiv.currentStyle.width);
+
+// if (oDiv.currentStyle){
+//     alert(oDiv.currentStyle.width);
+// }
+// else{
+
+//     alert(getComputedStyle(oDiv,false).width);
+// }
+};
 </script>
 </head>
 <body>
-      <div id="div1" style="width: 200px; height: 200px; background: red;">
+      <div id="div1">
     </div> 
 </body>
 </html>
