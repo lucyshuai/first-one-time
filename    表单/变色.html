@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+    </style>
+    <script>
+        function toGren(){
+            var oDiv=document.getElementById('div1')
+            oDiv.style.background='green';
+        }
+        function toYel(){
+            var oDiv=document.getElementById('div1')
+            oDiv.style.background='yellow';
+        }
+        function toBla(){
+            var oDiv=document.getElementById('div1')
+            oDiv.style.background='black ';
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="变绿" onclick="toGren()"/>
+    <input type="button" value="变黄" onclick="toYel()"/>
+    <input type="button" value="变黑" onclick="toBla ()"/>
+    <div id="div1"></div>
+</body>
+</html>

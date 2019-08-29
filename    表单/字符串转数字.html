@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串转数字 parseInt and parseFloat</title>
+    <script>
+    // var a='12';
+    // alert(parseInt(a)+1);   //13
+
+    // var a='12px';
+    // alert(parseInt(a)+1); //13
+
+    // var a='12px34';
+    // alert(parseInt(a)+1); //13 parseint 是从左到右看 碰到不是数字到就自动跳过 ，所以当parseint 读到p 就不会在读后面的内容直接跳过。
+
+    // var a='abc';
+    // alert(parseInt(a); //NaN  not a number
+
+    // var a=parseInt('abc');
+    // var b=parseInt('def');
+    // alert(a==b);      //false
+
+    //NaN和NaN是不相等的
+
+        var a='3.2';
+        // alert(parseInt(a));   ///3   --parseInt转换的是个整数。
+        alert(parseFloat(a));     ///3.2  --如果要用的小数 用 parseFloat  parseFloat 整数和小数都能转！
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+1.只要是字符串内的内容含有数字，都可以用parseint转换成数字。
+1.任何数字跟NaN相加都是NaN。
+3.parseInt转换的是个整数。 如果要用的小数 用 parseFloat
+4.parseFloat 和 parseInt 是显示类型转换（强制类型转换）

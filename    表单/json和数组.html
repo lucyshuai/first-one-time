@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    var json={a:12 ,b:5 ,c:7};
+    var arr=[12,5,7];
+
+    //alert(json.a); = alert(json['a']);
+    //alert(arr[0]);
+
+    //alert(arr.length);
+   //alert(json.length); json没有length
+
+   //数组循环
+   //第一种
+//    for(var i=0;arr.length;i++)
+//    {
+//        alert('第'+i+'个东西：'+arr[i]);
+//    }
+    //第2
+    // for(var i in arr)
+    // {
+    //       alert('第'+i+'个东西：'+arr[i]);
+    // }
+
+    for(var i in json)
+    {
+        alert('第'+i+'个东西：'+json[i]);
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+1.json用for in 循环

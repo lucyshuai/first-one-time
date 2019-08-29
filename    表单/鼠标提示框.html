@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>onmouseover</title>
+    <style>
+        /* onmouseove
+        #div1{
+            width: 200px;
+            height: 100px;
+            background: #ccc;
+            border: 1px solid #999;
+            display: none;
+        } */
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+    </style>
+    <script>
+        function toGreen(){
+            var oDiv= document.getElementById('div1');
+            oDiv.style.width='300px';
+            oDiv.style.height='300px';
+            oDiv.style.background='green';      
+        }
+        function toRed(){
+
+            var oDiv= document.getElementById('div1');
+            
+            oDiv.style.width='200px';
+            oDiv.style.height='200px';
+            oDiv.style.background='red'; 
+        }
+    </script>
+</head>
+<body>
+    <!-- onmousemove
+    <input type="checkbox" onmousemove="document.getElementById ('div1').style.display='block';" 
+                           onmouseout="document.getElementById ('div1').style.display='none';"  />
+    <div id="div1">
+        为了你的信息安全...
+    </div> -->
+    <div id="div1" onmousemove="toGreen()"
+                   onmouseout=" toRed()" >
+
+    </div>
+
+
+</body>
+</html>
+<!-- 1鼠标点到input上 让div1显示
+ 鼠标移出iput的时候 让div1隐藏
+  事件 用户操作
+  这里 onmouseover and onmouseout  -->
+<!-- div1.style.display='block'
+div1   id
+.      的
+div1的style...
+=      赋值 -->
+<!-- 兼容
+document.getElementById -->
+<!-- 函数 格式 
+function  函数名(){ 
+    代码
+}
+ 变量 var -->
